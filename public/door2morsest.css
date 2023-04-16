@@ -1,0 +1,101 @@
+body {
+	background-color: #121212;
+	color: #fff;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 50px;
+	text-align: center;
+}
+
+h1 {
+	font-size: 46px;
+	margin-bottom: 30px;
+    /* increase spacing between letters */
+    letter-spacing: 10px;
+}
+
+h2 {
+	font-size: 36px;
+    margin-top: 40px;
+	margin-bottom: 15px;
+    /* increase spacing between letters */
+    letter-spacing: 10px;
+    color: rgb(107, 107, 107);
+}
+
+h3 {
+	font-size: 26px;
+	margin-bottom: 15px;
+    margin-top: 0px;
+    /* increase spacing between letters */
+    letter-spacing: 8px;
+    color: dimgray;
+}
+
+
+input::placeholder {
+    color: #888;
+}
+
+
+input {
+    margin-top: 50px;
+    background-color: transparent;
+    color: inherit;
+    height: 50px;
+    border: 1px white;
+    border-style:dashed;
+    border-radius: 4px;
+    outline: none;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 0;
+    text-align: center;
+    margin-bottom:40px;
+}
+
+button{
+    background-color: #2196f3;
+    color: #f0f0f0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 18px;
+
+}
+
+button:hover {
+	background-color: #555;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    color: black;
+       
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    border: 5px;
+    border-radius: 20px; 
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  

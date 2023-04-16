@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dark Modern Slick Page</title>
+	<link rel="stylesheet" type="text/css" href="door2morsest.css">
+</head>
+<header>
+    <a href="/"><img src="home.webp" alt="home" width = "60vh" style = "position:fixed; filter:brightness(370%);"></a>
+    <img src="question.png" id = "q" alt="home" width = "60vh" style = "position:fixed; margin-left: 80px; filter:invert(80%); cursor:pointer">
+
+</header>
+
+    <body>
+<body>
+	<div class="container">
+		<h1>.-- --- .-. .-.. -.. / .-- .. -.. . / .-- . -...</h1>
+        <h2>CLUE:</h2 class = "keyword">
+        <h3 class = "clue">
+            I am a language made of dots and dashes,<br>
+            Used to send messages with hidden flashes,<br>
+            Invented by Samuel, it's now widely used,<br>
+            Decode my meaning, if you're not confused.
+        </h3>
+		<input  placeholder="Enter the answer" id = "inp" autofocus>
+        <br>
+		<button type="submit" id = "submit">Submit</button>
+    </div>
+        
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p>Nice you have cracked the clue!</p>
+            <a href="/door2final"><button class = "chat-input-submit">Next clue</button></a>
+            </div>
+        </div>
+        <div id="wrong-modal" class="modal">
+            <div class="modal-content">
+                <p style = "color: red">oops! wrong answer</p>
+            <button class = "chat-input-submit" id = "trya" onclick = "funcgoback()">Try again</button>
+            </div>
+        </div>
+        <div id="hint" class="modal">
+            <div class = "modal-content">
+                <div class="hint-popup">
+                  <p>It is a morse code</p>
+                  <button class = "chat-input-submit" id = "close">CLOSE</button>
+                  <button class="chat-input-submit" id = "sa">SHOW ANSWER</button>
+                  <p style="display:none" id = "sap">WORLD WIDE WEB</p>
+                </div>
+            </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="./scripts/door2morsesrc.js"></script>
+</html>

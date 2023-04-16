@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboardst.css">
+  </head>
+  <body>
+
+    <header>
+      <h1>Dashboard</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </nav>
+    <section>
+      <div class="card" id = "card1">
+        <h2>No.of players</h2>
+        <p id = "p1">Card Content</p>
+      </div>
+      <div class="card" id = "card1">
+        <h2>Total time spent</h2>
+        <p id = "p2">Card Content</p>
+      </div>
+      <div class="card" id = "card1">
+        <h2>Rank 1 id:</h2>
+        <p id = "p3">Card Content</p>
+      </div>
+    </section>
+    <section>
+      <div class="cardl">
+        <h2>Top Users</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Written communication</th>
+              <th>Language skills</th>
+              <th>Logical aptitude</th>
+              <th>Curiosity</th>
+              <th>Overall</th>
+            </tr>
+          </thead>
+          <tbody id = "tbody">
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <section>
+      <div class="cardc">
+        <canvas id = "can"></canvas>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2023 - Dashboard</p>
+    </footer>
+
+  </body>
+  <script src="./scripts/dashboardsrc.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+</html>

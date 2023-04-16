@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="door1trailerst.css">
+</head>
+<header>
+    <a href="/"><img src="home.webp" alt="home" width = "60vh" style = "position:fixed; filter:brightness(370%);"></a>
+    <img src="question.png" id = "q" alt="home" width = "60vh" style = "position:fixed; margin-left: 80px; filter:invert(80%); cursor:pointer">
+</header>
+    <body>
+<body>
+        <div class="chat-input-container">
+        <button class = "green" id = "clue">Click to reveal clue</button>
+        <br>    
+        <input class="chat-input" id="chat-input" type="text" placeholder="Type your answer Here" autofocus>
+        <br>
+        <button class="chat-input-submit" id="chat-submit">Answer</button>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p>Nice you have cracked the clue!</p>
+                <p>Door 3 is open now</p>
+            <a href="/door1lastdead"><button class = "chat-input-submit">Next clue</button></a>
+            <a href="/door3"><button class = "chat-input-submit">Door 3</button></a>
+            </div>
+        </div>
+        <div id="wrong-modal" class="modal">
+            <div class="modal-content">
+                <p style = "color: red">oops! wrong answer</p>
+            <button class = "chat-input-submit" id = "trya" onclick = "funcgoback()">Try again</button>
+            </div>
+        </div>
+        <div id="hint" class="modal">
+                <div class = "modal-content">
+                    <div class="hint-popup">
+                      <p>2 tabs with the room movie trailer will be opened if you click the "clue" button</p>
+                      <button class = "chat-input-submit" id = "close">CLOSE</button>
+                      <button class="chat-input-submit" id = "sa">SHOW ANSWER</button>
+                      <p style="display:none" id = "sap">room 2 (or) 2 rooms (or) rooms 2</p>
+                    </div>
+                </div>
+        </div>
+ 
+
+
+</body>
+    <script src="./scripts/door1trailersrc.js"></script>
+</html>

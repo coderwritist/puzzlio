@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="indexst.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <a href="/logout"><img src="logout.png" width = "60vh" alt="restart puzzle" style = "filter:invert(100%); position:fixed; margin:16px 16px; cursor:pointer"></a>
+  <a href="/restart"><img src="restart.png" width = "60vh" alt="restart puzzle" style = "filter:invert(100%); position:fixed; margin:16px 16px; margin-left:120px; margin-top: 18px; cursor:pointer"></a>
+  <a href="/dashboard"><button id = "dash" class = "dash" style = "position:fixed; margin:16px 16px; margin-left:175vh; margin-top: 30px; cursor:pointer">Dashboard</button></a>
+
+    <div class = "body">
+      <div class="container" id = "container">
+          <div id = "move">
+              <h1>404 Error</h1>
+              <p>Sorry, the page you requested was not found. Find the website by solving the puzzles and clues</p>
+          </div>
+          <div class="doors" id = "doors" style = "opacity: 0;">
+                <a href="/door1" id = "door1">
+                  <div class="door">
+                    <span>DOOR 1</span>
+                  </div>
+                </a>
+              <a href="/door2" id = "door2">
+                <div class="door">
+                  <span>DOOR 2<br><div id = "locked2" style = "font-size: 2rem;">(LOCKED)</div></span>
+                </div>
+              </a>
+              <a href="/door3" id  = "door3">
+                <div class="door">
+                  <span>DOOR 3<br><div id = "locked3" style = "font-size: 2rem;">(LOCKED)</div></span>
+                </div>
+              </a>
+          </div>
+        </div>
+    </div>
+</body>
+    <script src="./scripts/indexscr.js"></script>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dark Modern Slick Page</title>
+	<link rel="stylesheet" type="text/css" href="door3cypherst.css">
+</head>
+<header>
+    <a href="/"><img src="home.webp" alt="home" width = "60vh" style = "position:fixed; filter:brightness(370%);"></a>
+    <img src="question.png" id = "q" alt="home" width = "60vh" style = "position:fixed; margin-left: 80px; filter:invert(80%); cursor:pointer">
+
+</header>
+
+    <body>
+<body>
+	<div class="container">
+		<h1>KRJWKGIJGH</h1>
+        <h2>KEYWORD:</h2 class = "keyword">
+        <h3 class = "clue">
+            I'm an app that helps you explore,<br> 
+            The vast expanse of the online shore,<br>
+            My name is short, just seven letters long,<br>
+            But without me, the internet's just a song,<br>
+            I'll guide you through the digital maze,<br>
+            And keep you safe with my secure ways,<br>
+            With me, you shall scan the world like a pro,<br>
+            Finding new things wherever you go.
+        </h3>
+		<input  placeholder="Enter the answer" id = "inp" autofocus>
+        <br>
+		<button type="submit" id = "submit">Submit</button>
+    </div>
+        
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <p>Nice you have cracked the clue!</p>
+            <a href="/door3chat"><button class = "chat-input-submit">Next clue</button></a>
+            </div>
+        </div>
+        <div id="wrong-modal" class="modal">
+            <div class="modal-content">
+                <p style = "color: red">oops! wrong answer</p>
+            <button class = "chat-input-submit" id = "trya" onclick = "funcgoback()">Try again</button>
+            </div>
+        </div>
+        <div id="hint" class="modal">
+            <div class = "modal-content">
+                <div class="hint-popup">
+                  <p>It is a Vigenère Cipher. The keyword for decoding it is: BROWSER</p>
+                  <button class = "chat-input-submit" id = "close">CLOSE</button>
+                  <button class="chat-input-submit" id = "sa">SHOW ANSWER</button>
+                  <p style="display:none" id = "sap">JAVASCRIPT</p>
+                </div>
+            </div>
+    </div>
+
+</body>
+<script type="text/javascript" src="./scripts/door3cyphersrc.js"></script>
+</html>
