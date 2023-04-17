@@ -1,25 +1,16 @@
-document.addEventListener("DOMContentLoaded", function(event) {
-    var title = document.getElementById("container");
-    var doors = document.getElementById("doors")
-
-document.addEventListener("mousemove", function(event) {
-    
-    title.style.transform = "translateY(-0%)";
-    title.style.transition = "all 1s ease-out";
-    doors.style.display = "flex";
-    doors.style.opacity = 1;
-    doors.style.transition = "opacity 3s ease-in";
-
-
-
-  document.removeEventListener("mousemove", arguments.callee);
-});
-});
 
 
 
 // a function to execute when the window loads
 window.onload = function() {
+  var title = document.getElementById("container");
+    var doors = document.getElementById("doors")
+  title.style.transform = "translateY(-0%)";
+  title.style.transition = "all 1s ease-out";
+  doors.style.display = "flex";
+  doors.style.opacity = 1;
+  doors.style.transition = "opacity 3s ease-in";
+
   const queryString = window.location.search;
 console.log(queryString); // Output: "?name=John&age=25"
 
