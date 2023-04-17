@@ -132,7 +132,7 @@ function updatecards(users)
     var p2 = document.getElementById("p2");
     var p3 = document.getElementById("p3");
     p1.innerHTML = users.length
-    p2.innerHTML = totaltime/(1000*60) + " minutes"
+    p2.innerHTML = (totaltime/(1000*60)).toFixed(2) + " minutes"
     p3.innerHTML = users[0].username
 }
 
