@@ -10,10 +10,10 @@ const session = require('express-session');  // session middleware
 const MongoDBStore = require("connect-mongodb-session")(session);
 const User = require('./models/user.js');
 const ejs = require('ejs');
+require('dotenv').config();
 app.set("view engine", "ejs")
-
 const store = new MongoDBStore({
-    uri: "mongodb+srv://siddarthan23102:voldyvoldy1@cluster0.lgqqn0m.mongodb.net/puzzlio?retryWrites=true&w=majority",
+    uri: process.env.mongodblink,
     collection: "mySessions",
   });
 

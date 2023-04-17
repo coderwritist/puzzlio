@@ -1,3 +1,7 @@
+require('dotenv').config();
+
+const apikey = process.env.openaikey
+
 const door1chat = async (hist) => 
 {
     if(hist.length> 25)
@@ -17,7 +21,7 @@ const door1chat = async (hist) =>
     const { Configuration, OpenAIApi, errors} = require("openai");
 
     const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: apikey,
     });
     const openai = new OpenAIApi(configuration);
     console.log("Goin to openai...")
@@ -61,7 +65,7 @@ const door3chat = async (hist) =>
     const { Configuration, OpenAIApi } = require("openai");
 
     const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: apikey,
     });
     const openai = new OpenAIApi(configuration);
     console.log("Goin to openai...")
@@ -109,7 +113,7 @@ const door2final = async (hist) =>
     const { Configuration, OpenAIApi,errors} = require("openai");
 
     const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: apikey,
     });
     const openai = new OpenAIApi(configuration);
     console.log("Goin to openai...")

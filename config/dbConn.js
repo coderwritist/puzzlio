@@ -1,11 +1,11 @@
 const mongoose = require("mongoose")
 mongoose.set('strictQuery', true)
-
+require('dotenv').config();
 const DBconn= async()=>{
     
     try
     {
-        await mongoose.connect("mongodb+srv://siddarthan23102:voldyvoldy1@cluster0.lgqqn0m.mongodb.net/puzzlio?retryWrites=true&w=majority")
+        await mongoose.connect(process.env.mongodblink)
     }
     catch(err)
     {
