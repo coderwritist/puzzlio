@@ -1,93 +1,144 @@
 html, body {
-    height: 100%;
-    overflow: hidden;
-	font-family: Arial, sans-serif;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
   letter-spacing: 5px;
-  }
-  body
-  {
-    margin: 0px;
-  }
+}
 
+body {
+  margin: 0px;
+}
 
-  a {
-    text-decoration: none;
-  }
-  .body {
-    margin: 0px;
-    display: flex;
-    width: 100%; /* Full width */
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #1c1c1c;
-    color: #fff;
-  }
+a {
+  text-decoration: none;
+}
 
-  .move
-  {
-    transition: all 1s ease-out;
-  }
-  
-  .container {
-    text-align: center;
-    transform: translateY(+20%);
-  }
-  
+.body {
+  margin: 0px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.move {
+  transition: all 1s ease-out;
+}
+
+.container {
+  text-align: center;
+  transform: translateY(+20%);
+}
+
+h1 {
+  font-size: 9rem;
+  font-weight: bold;
+  margin: 0 0 0 0;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 0rem 3rem;
+  margin-top: 0;
+  margin-bottom: 7rem;
+}
+
+.doors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.door {
+  color: black;
+  width: 300px;
+  height: 400px;
+  margin: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background-image: url("door.jpg");
+  background-size: contain;
+}
+
+.door:hover {
+  background-image: none;
+  background-color: #fff;
+  color: #2d2d2d;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+}
+
+.door span {
+  display: block;
+}
+
+.dash {
+  background-color: white;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: inherit;
+  border-radius: 4px;
+  display: none;
+}
+
+/* Media queries */
+
+@media (max-width: 768px) {
   h1 {
-    font-size: 9rem;
-    font-weight: bold;
-    margin: 0 0 0 0;
+    font-size: 5rem;
   }
-  
-  h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
-  
+
   p {
-    font-size: 1.5rem;
-    margin: 0rem 3rem;
-    margin-top: 0;
-    margin-bottom: 7rem;
-  }
-  
-  .doors {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 1.2rem;
+    margin: 0rem 1rem;
+    margin-bottom: 3rem;
   }
 
   .door {
-    color: black;
-    width: 300px;
-    height: 400px;
-    margin: 1rem;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-    background-image: url("door.jpg");
-    background-size: contain;
- 
+    width: 200px;
+    height: 300px;
+    font-size: 2rem;
   }
-  
-  .door:hover {
-    background-image: none;
-    background-color: #fff;
-    color: #2d2d2d;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.7);
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 4rem;
   }
-  
-  .door span {
-    display: block;
+
+  p {
+    font-size: 1rem;
+    margin: 0rem 1rem;
+    margin-bottom: 2rem;
   }
+
+  .door {
+    width: 150px;
+    height: 250px;
+    font-size: 1.5rem;
+  }
+
+
   
   .dash {
     background-color: white;
@@ -102,3 +153,4 @@ html, body {
     border-radius: 4px;
     display: none;
   }
+}
